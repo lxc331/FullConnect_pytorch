@@ -70,7 +70,7 @@ def deal_train_and_val_data():
     train_dataloader = data.DataLoader(train_dataset, batch_size=15, shuffle=True)
     val_dataloader = data.DataLoader(val_dataset, batch_size=15, shuffle=False)
 
-
+    print(train_dataloader, val_dataloader)
     return train_dataloader, val_dataloader
 
 # 定义一个函数，用于训练模型
